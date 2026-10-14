@@ -1,0 +1,19 @@
+golden-chat pone a tu disposición varios bots cuya finalidad
+es la siguiente:
+  
+  3CHaN        Servicio de mantenimiento de canales.
+  3CReG        Servicio de registro de canales.
+  3NiCK        Servicio de registro y mantenimento de Nicks.
+  3MeMO        Servicio de mensajería entre usuarios con nicks registrados.
+  3HeLP        Servicio de ayuda on-line.
+  3ipvirtual   Servicio de hosts virtuales personalizables.
+  
+Bots de acceso restringido:
+  3AdminServ   Servicio para gestión de la Red.
+  3OPeR        Servicio sólo para OPERS/IRCOPS.
+  3DdbServ     Servicio para gestión de la BDD.
+  3GLOBAL      Servicio de mensajería global.
+  3Antispam    Servicio para evitar y penalizar el spam no permitido en la Red.
+  
+  
+Para ver la ayuda de cada bot, escriba 12/msg BOT HELP.

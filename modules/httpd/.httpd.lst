@@ -1,0 +1,8 @@
+auth-ip_static.o
+auth-password_static.o
+dbaccess_static.o
+debug_static.o
+main_static.o
+redirect_static.o
+top-page_static.o
+util.o

@@ -1,0 +1,8 @@
+¿Que es un 12GLINE?
+ 
+Una G-line es una expulsión de toda la red, que se mantiene
+hasta que expira (al añadirse se fija un tiempo de expiración). 
+ 
+Normalmente, las G-lines no duran más de unos minutos, aunque
+en casos graves, pueden tener expiraciones de más de un mes o 
+incluso varios años.

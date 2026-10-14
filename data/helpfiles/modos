@@ -1,0 +1,30 @@
+En esta red, los usuarios pueden tener los siguientes modos:
+ 
+  12r   Nick registrado y identificado
+  12x   Proteccion de IP (ip virtual)
+  12i   Modo invisible (No aparece utilizando /who)
+  12s   Recibir noticias del servidor
+  12w   Recibir wallops
+  12g   Recibir mensajes del servidor si esta en modo DEBUG
+  12d   Modo "Dead", no recibir mensajes de canales
+  12c   Activando ese modo en el nick y estando el canal en modo +c, no veremos los colores con los que escriben los usuarios.
+  12R   Restringe privados. Solo se reciben privados de usuarios registrados (+r).
+  12S   Nick Suspendido. Sustituye al +r y no tendr. acceso a los servicios de la Red.No se puede usar un nick suspendido hasta que se levante el suspend.
+ 
+ 
+Modos sólo para IRCOPS o OPERS:
+ 
+  12h   (Helper Operator) OPERador de los servicios de red
+  12o   (IRC Operator) IRCop de la red
+  12X   Ver las ips REALES a usuarios que tienen +x
+  12k   Modo Channel Service, no pueden ser deopeados o kickeados de un canal
+  12B   roBot oficial de la Red
+ 
+  Para cambiar los modos de usuario, escribe:  12/mode nick {+/-}modos.
+ 
+  La 12+ es para agregar modos y la 12- para quitar modos. El modo 12r de nick registrado no se puede poner ni quitar a voluntad.
+ 
+  Ejemplo:
+ 
+  4/mode Pepe +rxcR
+ 

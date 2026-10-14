@@ -1,0 +1,13 @@
+extern void *_this_module_ptr_statserv_main;
+extern uint32 module_version_statserv_main;
+extern char module_config_statserv_main[];
+extern int init_module_statserv_main();
+extern int exit_module_statserv_main();
+extern void add_serverstats();
+extern void del_serverstats();
+extern void get_serverstats();
+extern void put_serverstats();
+extern void first_serverstats();
+extern void next_serverstats();
+extern void new_serverstats();
+extern void free_serverstats();

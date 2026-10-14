@@ -1,0 +1,8 @@
+access_static.o
+autojoin_static.o
+collide.o
+link_static.o
+mail-auth_static.o
+main_static.o
+set.o
+util.o

@@ -1,0 +1,3 @@
+forward_static.o
+ignore_static.o
+main_static.o

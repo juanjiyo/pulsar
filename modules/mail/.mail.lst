@@ -1,0 +1,3 @@
+main_static.o
+sendmail_static.o
+smtp_static.o

@@ -1,0 +1,9 @@
+Que es un 12CLON?
+ 
+Un CLON es una o más conexiones simultáneas al chat de un usuario 
+usando una conexion ya abierta, con la misma ip. Para crear un
+CLON solo tienes que abrir otro mirc / webchat y conectarte de
+nuevo.
+ 
+Actualmente hay un límite establecido de 3 conexiones simultáneas
+al chat.

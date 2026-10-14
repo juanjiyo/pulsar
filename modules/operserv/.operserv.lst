@@ -1,0 +1,4 @@
+akill_static.o
+main_static.o
+maskdata.o
+sline_static.o

@@ -1,0 +1,65 @@
+check_test_nt      : cache says test
+find_cc            : cache supplied `gcc'
+find_cc            : test vararg macros...
+find_cc            : >>> gcc conf-tmp/test.c -o conf-tmp/test
+conf-tmp/test.c: In function 'main':
+conf-tmp/test.c:1:29: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+ #define foo(a,...) int a() {printf("hello %s\n" , ##__VA_ARGS__); return 69;}
+                             ^
+conf-tmp/test.c:2:1: note: in expansion of macro 'foo'
+ foo(main,"world")
+ ^~~
+conf-tmp/test.c:1:29: warning: incompatible implicit declaration of built-in function 'printf'
+ #define foo(a,...) int a() {printf("hello %s\n" , ##__VA_ARGS__); return 69;}
+                             ^
+conf-tmp/test.c:2:1: note: in expansion of macro 'foo'
+ foo(main,"world")
+ ^~~
+conf-tmp/test.c:1:29: note: include '<stdio.h>' or provide a declaration of 'printf'
+ #define foo(a,...) int a() {printf("hello %s\n" , ##__VA_ARGS__); return 69;}
+                             ^
+conf-tmp/test.c:2:1: note: in expansion of macro 'foo'
+ foo(main,"world")
+ ^~~
+find_cc            : >>> conf-tmp/test
+hello world
+find_cc            : *** Command failed (exit code 69)
+find_cc            : vararg macros ok.
+find_cc            : test va_copy...
+find_cc            : >>> gcc conf-tmp/test.c -o conf-tmp/test
+find_cc            : >>> conf-tmp/test
+find_cc            : va_copy ok.
+find_ccopts        : cache supplied flags: `-O2 -fno-strict-aliasing -fno-stack-protector'
+check_gcc_builtin  : >>> gcc -O2 -fno-strict-aliasing -fno-stack-protector -fno-inline-functions conf-tmp/test.c -o conf-tmp/test
+check_gcc_builtin  : checking for __builtin_apply()/__builtin_return() bugs
+check_gcc_builtin  : >>> conf-tmp/test
+check_gcc_builtin  : bugs not detected
+find_lflags        : cache supplied `'
+find_exe_suffix    : >>> gcc -O2 -fno-strict-aliasing -fno-stack-protector conf-tmp/test.c -o conf-tmp/test
+find_exe_suffix    : using nothing
+find_libs          : cache supplied `-lm -lcrypt'
+check_shared       : static modules selected (cache)
+check_ranlib       : cache says yes
+check_stdint       : cache says present
+check_strings      : cache says present
+check_sysselect    : cache says present
+check_sysproto     : cache says not present
+check_int8         : cache supplied int8_t
+check_int16        : cache supplied int16_t
+check_int32        : cache supplied int32_t
+check_int64        : cache supplied int64_t
+check_int_size     : cache supplied 32 bits
+check_long_size    : cache supplied 64 bits
+check_ptr_size  : cache supplied 64 bits
+check_time_t       : cache supplied 64 bits, max (((time_t)1<<(sizeof(time_t)*8-2))+(((time_t)1<<(sizeof(time_t)*8-2))-1))
+check_gid_t        : cache supplied 32 bits
+check_socklen_t    : cache said present
+check_aix_intNN    : >>> egrep int16|int32 /usr/include/sys/systypes.h
+grep: /usr/include/sys/systypes.h: No such file or directory
+check_aix_intNN    : *** Command failed (exit code 2)
+check_aix_intNN    : int16/int32 types not found
+check_strerror     : cache supplied strerror()
+check_compat       : cache supplied: (none)
+check_install      : cache says use regular `install'
+check_install-d    : cache says yes
+check_copy_recurse : cache supplied /bin/cp -dpr

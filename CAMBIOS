@@ -1,0 +1,12 @@
+* 2013/08/30 luizenciso@gmail.com      (1.1.1)             FIX / FEATURE
+  -----------------------------------------------------------------------
+  Agregue los comandos CLONES, CONEXIONES, E-LINES en AdminServ, 
+  que permiten el matenimiento de las I-Lines y E-Lines del ircd. 
+   
+  Corregi un fallo en el contador de opers activos (mostraba un valor negativo
+  en el STATS).
+
+* 2013/08/28 luizenciso@gmail.com                                CLEANUP
+  -----------------------------------------------------------------------
+  Muchos cambios y arreglos, nada documentado :p, de ahora en adelante
+  se documentara.

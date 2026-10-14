@@ -1,0 +1,4 @@
+devnull_static.o
+helpserv_static.o
+xml-export_static.o
+xml-import_static.o

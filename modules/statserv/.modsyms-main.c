@@ -1,0 +1,15 @@
+struct {const char *name; void *value; } modsyms_statserv_main[] = {
+{"_this_module_ptr",&_this_module_ptr_statserv_main},
+{"module_version",&module_version_statserv_main},
+{"module_config",module_config_statserv_main},
+{"init_module",init_module_statserv_main},
+{"exit_module",exit_module_statserv_main},
+{"add_serverstats", add_serverstats},
+{"del_serverstats", del_serverstats},
+{"get_serverstats", get_serverstats},
+{"put_serverstats", put_serverstats},
+{"first_serverstats", first_serverstats},
+{"next_serverstats", next_serverstats},
+{"new_serverstats", new_serverstats},
+{"free_serverstats", free_serverstats},
+{0}};

@@ -1,0 +1,7 @@
+¿Que es un 12IDENT?
+ 
+Una identidad (es una palabra) que concreta una máscara
+(sobretodo cuando hay clones). La estructura de la conexión
+de un usuario sería asi:
+ 
+  nick!ident@host

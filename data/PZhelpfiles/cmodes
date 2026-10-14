@@ -1,0 +1,30 @@
+En esta red, los canales pueden tener los siguientes modos:
+ 
+  12+r  Indica que el canal está registrado.
+  12+c  No se muestran colores en el canal.
+  12+C  Evitaremos que se puedan enviar eventos CTCP, excepto /me.
+  12+i  Entrada permitida únicamente a usuarios invitados a un canal.
+  12+k  Canal protegido con clave, para entrar necesitas la contraseña.
+  12+l  Limita el número máximo de usuarios en un canal.
+  12+m  Canal moderado. Sólo pueden hablar los operadores (@) o los 'voices' (+v)
+  12+M  Canal moderado. Sólo pueden hablar operadores (@), 'voices' (+v) y usuarios registrados.
+  12+n  Sólo los usuarios que están dentro del canal pueden hablar en él.
+  12+N  Evita que se envíen notices al canal.
+  12+p  Canal privado (no sale en la lista de canales /list ni /whois de usuarios, pero sí en /who)
+  12+R  Canal restringido, solo pueden entrar los usuarios con nick registrado.
+  12+s  Canal secreto (no sale en la lista de canales /list ni /whois)
+  12+t  Solo los operadores (@) pueden cambiar el topic del canal.
+  12+u  Impedimos a los usuarios especificar mensaje de salida del canal o del chat.
+ 
+Modos de usuario dentro del canal:
+ 
+  12+o [nick]   Status de operador (@) del canal
+  12+v [nick]   Status de moderador (+) del canal
+  12+b [nick!user@host]  Prohibe la entrada (Ban) a la mascara <nick!user@host>
+ 
+Para cambiar los modos de canal en un canal, escribe 
+  12/mode canal {+/-}modos.
+El 12+ es para agregar modos y la - para quitarlos. Ejemplo:
+ 
+  4/mode #Lima +ntN-i
+ 

@@ -1,0 +1,4 @@
+extsyms.o
+fileutil.o
+standard_static.o
+version4_static.o

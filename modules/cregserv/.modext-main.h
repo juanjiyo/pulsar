@@ -1,0 +1,11 @@
+extern void *_this_module_ptr_cregserv_main;
+extern uint32 module_version_cregserv_main;
+extern char module_config_cregserv_main[];
+extern int init_module_cregserv_main();
+extern int exit_module_cregserv_main();
+extern void add_creginfo();
+extern void del_creginfo();
+extern void get_creginfo();
+extern void put_creginfo();
+extern void first_creginfo();
+extern void next_creginfo();

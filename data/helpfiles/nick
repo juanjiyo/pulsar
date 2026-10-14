@@ -1,0 +1,10 @@
+¿Como se registra un nick?
+ 
+Para registrar un nick has de escribir el siguiente comando:
+/MSG NiCK REGISTER tu@correo-electronico
+ 
+12Nick es el nombre del bot de registro y mantenimiento de nicks.
+ 
+Despues de registrar el nick, te llegará un password temporal y
+las instrucciones para identificarse a la cuenta de correo que has
+especificado al registrar el nick.
